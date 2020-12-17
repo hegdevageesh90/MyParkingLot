@@ -1,7 +1,6 @@
 package com.intuit.interview.actions;
 
 import com.intuit.interview.data.ParkingLotDataStructure;
-import com.intuit.interview.exceptions.ServiceException;
 
 import java.util.ArrayList;
 import java.util.List;

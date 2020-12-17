@@ -1,8 +1,8 @@
 package com.intuit.interview.dto;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CarTest
 {
@@ -25,7 +25,8 @@ public class CarTest
 	@Test
 	public void testToString()
 	{
-		assertEquals("Car(registrationNumber=null, color=null)", (new Car()).toString());
+		assertEquals("Car(registrationNumber=null, color=null)",
+				(new Car()).toString());
 	}
 }
 

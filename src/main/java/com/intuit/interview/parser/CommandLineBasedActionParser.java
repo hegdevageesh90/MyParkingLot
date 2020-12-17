@@ -3,7 +3,6 @@ package com.intuit.interview.parser;
 import com.intuit.interview.actions.ActionFactory;
 import com.intuit.interview.actions.ActionProvider;
 import com.intuit.interview.exceptions.ActionNotFoundException;
-import com.intuit.interview.exceptions.ServiceException;
 
 import java.util.Scanner;
 
@@ -12,8 +11,7 @@ import java.util.Scanner;
  */
 public class CommandLineBasedActionParser
 {
-	public CommandLineBasedActionParser()
-			throws ActionNotFoundException
+	public CommandLineBasedActionParser() throws ActionNotFoundException
 	{
 		Scanner scanner = new Scanner(System.in);
 		ActionFactory actionFactory = new ActionFactory();

@@ -2,7 +2,6 @@ package com.intuit.interview.actions;
 
 import com.intuit.interview.data.ParkingLotDataStructure;
 import com.intuit.interview.dto.Car;
-import com.intuit.interview.exceptions.ServiceException;
 
 import static com.intuit.interview.miscellaneous.Constants.PARKING_LOT_NOT_CREATED;
 

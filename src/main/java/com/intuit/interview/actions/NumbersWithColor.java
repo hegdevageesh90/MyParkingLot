@@ -2,7 +2,6 @@ package com.intuit.interview.actions;
 
 import com.intuit.interview.data.ParkingLotDataStructure;
 import com.intuit.interview.dto.Car;
-import com.intuit.interview.exceptions.ServiceException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,7 +41,8 @@ public class NumbersWithColor extends ActionProvider
 			}
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());;
+			System.out.println(e.getMessage());
+			;
 		}
 	}
 }
