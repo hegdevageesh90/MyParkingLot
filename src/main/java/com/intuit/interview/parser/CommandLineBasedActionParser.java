@@ -24,6 +24,7 @@ public class CommandLineBasedActionParser
 			String[] splitCommand = command.split("\\s+");
 			System.out.println("Output: ");
 			action.runAction(splitCommand);
+			System.out.println();
 		}
 	}
 }

@@ -24,10 +24,15 @@ public class FileBasedActionParser
 			bufferedReader = new BufferedReader(new FileReader(path));
 			String command;
 			while ((command = bufferedReader.readLine()) != null) {
+				System.out.println("Input:");
+				System.out.println(command);
+				System.out.println();
 				final ActionProvider provider = actionFactory
 						.getAction(command);
 				String[] splitCommand = command.split("\\s+");
+				System.out.println("Output:");
 				provider.runAction(splitCommand);
+				System.out.println();
 			}
 		} catch (IOException e) {
 			throw new ServiceException(e.getMessage(), e);

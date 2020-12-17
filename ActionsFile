@@ -1,0 +1,19 @@
+create 6 2
+park AB-12-CD-3456 White
+park EF-12-GH-3456 Black
+park IJ-12-KL-3456 Blue
+park MN-12-OP-3456 White
+park QR-12-ST-3456 Black
+park UV-12-WX-3456 Red
+leave 4
+slot_check
+leave 2
+slot_check
+slot_check_with_color White
+slot_check_with_color Black
+register_with_colour Red
+park QW-12-ER-3456 Blue
+status
+park TY-12-UI-3456 White
+slot_check_with_number QW-12-ER-3456
+status
