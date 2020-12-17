@@ -34,6 +34,7 @@ public class ActionFactory
 		case ACTION_SLOT_WITH_NUMBER:
 			return new SlotWithNumber();
 		default:
+			System.out.println(INVALID_COMMAND);
 			throw new ActionNotFoundException(INVALID_COMMAND);
 		}
 	}

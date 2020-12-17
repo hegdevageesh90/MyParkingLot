@@ -17,7 +17,7 @@ import static com.intuit.interview.miscellaneous.Constants.PARKING_LOT_NOT_CREAT
 public class SlotWithNumber extends ActionProvider
 {
 	@Override
-	public void runAction(String[] splitCommand) throws ServiceException
+	public void runAction(String[] splitCommand)
 	{
 		try {
 			if (!ParkingLotDataStructure.getRemainingSpots().isEmpty()
@@ -46,10 +46,10 @@ public class SlotWithNumber extends ActionProvider
 					System.out.println(String.join(",", slotNum));
 				}
 			} else {
-				throw new ServiceException(PARKING_LOT_NOT_CREATED);
+				System.out.println(PARKING_LOT_NOT_CREATED);
 			}
 		} catch (Exception e) {
-			throw new ServiceException(e.getMessage(), e);
+			System.out.println(e.getMessage());
 		}
 	}
 }

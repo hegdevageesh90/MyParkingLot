@@ -4,13 +4,15 @@ import com.intuit.interview.data.ParkingLotDataStructure;
 import com.intuit.interview.dto.Car;
 import com.intuit.interview.exceptions.ServiceException;
 
+import static com.intuit.interview.miscellaneous.Constants.PARKING_LOT_NOT_CREATED;
+
 /**
  * @author Vageesh Hegde
  */
 public class Status extends ActionProvider
 {
 	@Override
-	public void runAction(String[] splitCommand) throws ServiceException
+	public void runAction(String[] splitCommand)
 	{
 		try {
 			if (!ParkingLotDataStructure.getRemainingSpots().isEmpty()
@@ -28,12 +30,11 @@ public class Status extends ActionProvider
 					}
 				}
 			} else {
-				throw new ServiceException(
-						"Parking Lot Not Found. Create one first");
+				System.out.println(PARKING_LOT_NOT_CREATED);
 			}
 
 		} catch (Exception e) {
-			throw new ServiceException(e.getMessage(), e);
+			System.out.println(e.getMessage());
 		}
 	}
 }

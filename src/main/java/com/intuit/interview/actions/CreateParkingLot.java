@@ -12,7 +12,7 @@ import java.util.List;
 public class CreateParkingLot extends ActionProvider
 {
 	@Override
-	public void runAction(String[] splitCommand) throws ServiceException
+	public void runAction(String[] splitCommand)
 	{
 		try {
 			int inputParkingLotSize = Integer.parseInt(splitCommand[1]);
@@ -28,7 +28,7 @@ public class CreateParkingLot extends ActionProvider
 					"Created a parking lot with " + inputParkingLotSize
 							+ " slots and " + entryPoints + " entry points");
 		} catch (Exception e) {
-			throw new ServiceException(e.getMessage(), e);
+			System.out.println(e.getMessage());
 		}
 	}
 }

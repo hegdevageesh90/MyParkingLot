@@ -9,13 +9,13 @@ import com.intuit.interview.exceptions.ServiceException;
 public class FreeSlots extends ActionProvider
 {
 	@Override
-	public void runAction(String[] splitCommand) throws ServiceException
+	public void runAction(String[] splitCommand)
 	{
 		try {
 			System.out.println(
 					ParkingLotDataStructure.getRemainingSpots().size());
 		} catch (Exception e) {
-			throw new ServiceException(e.getMessage(), e);
+			System.out.println(e.getMessage());
 		}
 	}
 }

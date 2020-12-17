@@ -7,6 +7,5 @@ import com.intuit.interview.exceptions.ServiceException;
  */
 public abstract class ActionProvider
 {
-	public abstract void runAction(String[] splitCommand)
-			throws ServiceException;
+	public abstract void runAction(String[] splitCommand);
 }

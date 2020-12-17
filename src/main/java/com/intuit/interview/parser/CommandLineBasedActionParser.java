@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class CommandLineBasedActionParser
 {
 	public CommandLineBasedActionParser()
-			throws ActionNotFoundException, ServiceException
+			throws ActionNotFoundException
 	{
 		Scanner scanner = new Scanner(System.in);
 		ActionFactory actionFactory = new ActionFactory();
